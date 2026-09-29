@@ -85,6 +85,7 @@ export default function LoginPage() {
             type="submit"
             className="btn btn-primary w-full"
             disabled={isSubmitting}
+            aria-label="Submit Form"
           >
             {isSubmitting ? (
               <span className="loading loading-spinner loading-sm"></span>

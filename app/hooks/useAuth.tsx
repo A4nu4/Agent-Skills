@@ -1,5 +1,3 @@
-"use client";
-
 import {
   createContext,
   useContext,
@@ -112,7 +110,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       return data;
     },
-    []
+    [],
   );
 
   const register = useCallback(
@@ -139,7 +137,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       return data;
     },
-    []
+    [],
   );
 
   const logout = useCallback(async () => {

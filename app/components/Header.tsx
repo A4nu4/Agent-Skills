@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
+import { useState } from "react";
 
 export default function Header() {
   const { isAuthenticated, user, logout, isLoading } = useAuth();
@@ -10,7 +11,12 @@ export default function Header() {
     <div className="navbar bg-base-200 shadow-lg">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost lg:hidden"
+            aria-label="Dropwdown Menu"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
